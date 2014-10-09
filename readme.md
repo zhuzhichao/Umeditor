@@ -16,7 +16,7 @@
 命令行下直接 `composer require "zhuzhichao/umeditor"` ，版本的话无特殊需求则选择 `dev-master`，当前使用的Umeditor版本为1.2.2
 
 ###Config
-1. 在 `app/config/app.php` 的 `providers` 数组中添加
+1.在 `app/config/app.php` 的 `providers` 数组中添加
 ```php
 'Zhuzhichao\Umeditor\UmeditorServiceProvider',
 ```
@@ -26,7 +26,7 @@
 ```
 **同时确保 `url` 的值为web的地址**
 
-2. 命令行下执行如下命令
+2.命令行下执行如下命令
 ```shell
 php artisan config:publish zhuzhichao/umeditor
 ```
@@ -35,7 +35,7 @@ php artisan config:publish zhuzhichao/umeditor
 php artisan asset:publish zhuzhichao/umeditor
 ```
 
-3. 配置文件的修改:
+3配置文件的修改:
 ```php
 // app/config/packages/zhuzhichao/umeditor/config.php
 <?php
@@ -79,11 +79,11 @@ return [
 ];
 ```
 
-4. 终于配置完成了
+4.终于配置完成了
 
 ###Use
 
-1. 封装了一下方法可以方便大家添加编辑器的css和js，以及编辑器，直接在 `blade` 的模版中使用
+1.封装了一下方法可以方便大家添加编辑器的css和js，以及编辑器，直接在 `blade` 的模版中使用
 ```php
 // 添加css样式
 {{ Umeditor::Css() }}
@@ -104,12 +104,12 @@ return [
 {{ Umeditor::Js() }}
 ```
 
-2. 文件的上传位置为 `public/upload` 文件夹下，请确保有写入权限
+2.文件的上传位置为 `public/upload` 文件夹下，请确保有写入权限
 
-3. 好嘞，终于大功告成，你可以参考[这里](http://ueditor.baidu.com/website/umeditor.html)来使用编辑器的一些方法了。
+3.好嘞，终于大功告成，你可以参考[这里](http://ueditor.baidu.com/website/umeditor.html)来使用编辑器的一些方法了。
 
 ##Contributing
-有什么新的想法和建议，欢迎提交[issue]([https://github.com/zhuzhichao/Umeditor/issues])或者[Pull Requests]([https://github.com/zhuzhichao/Umeditor/pulls])。
+有什么新的想法和建议，欢迎提交[issue](https://github.com/zhuzhichao/Umeditor/issues)或者[Pull Requests](https://github.com/zhuzhichao/Umeditor/pulls)。
 
 ##License
 MIT
