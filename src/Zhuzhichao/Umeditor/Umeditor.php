@@ -24,12 +24,12 @@ class Umeditor {
     }
 
     public static function css() {
-        echo '<link href="/packages/zhuzhichao/umeditor/themes/default/css/umeditor.css" type="text/css" rel="stylesheet">';
+        echo '<link href="'. asset('packages/zhuzhichao/umeditor/themes/default/css/umeditor.css') .'" type="text/css" rel="stylesheet">';
     }
 
     public static function js() {
         echo '<script type="text/javascript" charset="utf-8" src="'.route('umeditor.config').'"></script>';
-        echo '<script type="text/javascript" charset="utf-8" src="/packages/zhuzhichao/umeditor/umeditor.min.js"></script>
-            <script type="text/javascript" src="/packages/zhuzhichao/umeditor/lang/zh-cn/zh-cn.js"></script>';
+        echo '<script type="text/javascript" charset="utf-8" src="'.asset('packages/zhuzhichao/umeditor/umeditor.min.js').'"></script>
+            <script type="text/javascript" src="'.asset('packages/zhuzhichao/umeditor/lang/zh-cn/zh-cn.js').'"></script>';
     }
 }
