@@ -86,7 +86,7 @@ return [
 1.封装了一下方法可以方便大家添加编辑器的css和js，以及编辑器，直接在 `blade` 的模版中使用
 ```php
 // 添加css样式
-{{ Umeditor::Css() }}
+{{ Umeditor::css() }}
 ```
 
 ```php
@@ -101,7 +101,7 @@ return [
 
 ```php
 // 添加js
-{{ Umeditor::Js() }}
+{{ Umeditor::js() }}
 ```
 
 2.文件的上传位置为 `public/upload` 文件夹下，请确保有写入权限
