@@ -24,7 +24,7 @@
 ```php
 'Umeditor'        => 'Zhuzhichao\Umeditor\Umeditor',
 ```
-**同时确保 `url` 的值为web的地址**
+**同时确保 `url` 的值为web的地址, 同时别忘了`composer dumpautoload`**
 
 2.命令行下执行如下命令
 ```shell
@@ -35,7 +35,7 @@ php artisan config:publish zhuzhichao/umeditor
 php artisan asset:publish zhuzhichao/umeditor
 ```
 
-3配置文件的修改:
+3.配置文件的修改:
 ```php
 // app/config/packages/zhuzhichao/umeditor/config.php
 <?php
