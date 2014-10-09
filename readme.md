@@ -3,7 +3,6 @@
 `Umeditor for laravel` 对于国内最好用的富文本web编辑器[umeditor](http://ueditor.baidu.com/website/umeditor.html)的封装，方便使用 `laravel` 的朋友能够快速配置和使用，以及在线更新编辑器。
 
 ##特点
-----
 1. 方便配置
 2. 随时更新
 3. 使用[composer](https://getcomposer.org/)进行安装管理，国际标准，方便快捷
@@ -19,13 +18,14 @@
 ###Config
 1. 在 `app/config/app.php` 的 `providers` 数组中添加
 ```php
-        'Zhuzhichao\Umeditor\UmeditorServiceProvider',
+'Zhuzhichao\Umeditor\UmeditorServiceProvider',
 ```
 `aliases` 数组中添加
 ```php
-        'Umeditor'        => 'Zhuzhichao\Umeditor\Umeditor',
+'Umeditor'        => 'Zhuzhichao\Umeditor\Umeditor',
 ```
 **同时确保 `url` 的值为web的地址**
+
 2. 命令行下执行如下命令
 ```shell
 php artisan config:publish zhuzhichao/umeditor
@@ -34,6 +34,7 @@ php artisan config:publish zhuzhichao/umeditor
 ```shell
 php artisan asset:publish zhuzhichao/umeditor
 ```
+
 3. 配置文件的修改:
 ```php
 // app/config/packages/zhuzhichao/umeditor/config.php
@@ -77,9 +78,11 @@ return [
     ],
 ];
 ```
+
 4. 终于配置完成了
 
 ###Use
+
 1. 封装了一下方法可以方便大家添加编辑器的css和js，以及编辑器，直接在 `blade` 的模版中使用
 ```php
 // 添加css样式
