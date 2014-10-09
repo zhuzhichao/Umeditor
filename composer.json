@@ -1,0 +1,23 @@
+{
+    "name": "zhuzhichao/umeditor",
+    "description": "Umeditor for laravel",
+    "authors": [
+        {
+            "name": "zhuzhichao",
+            "email": "me@zhuzhichao.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "4.2.*"
+    },
+    "autoload": {
+        "classmap": [
+            "src/controllers"
+        ],
+        "psr-0": {
+            "Zhuzhichao\\Umeditor\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
