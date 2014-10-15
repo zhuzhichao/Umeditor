@@ -1,8 +1,9 @@
 <?php
 
+use Illuminate\Routing\Controller;
 use Zhuzhichao\Umeditor\UmeditorUploader;
 
-class UmeditorImageController extends BaseController {
+class UmeditorImageController extends Controller {
 	public function upload() {
         //上传配置
         $config = Config::get('umeditor::upload');

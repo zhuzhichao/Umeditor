@@ -21,7 +21,7 @@ return [
         'UMEDITOR_HOME_URL' => $url,
 
         // 图片上传编辑器配置
-        'imageUrl' => 'umeditor/imageUp',
+        'imageUrl' => Config::get('app.url').'/umeditor/imageUp',
         'imagePath' => '',
         'imageFieldName' => 'upfile',
 
