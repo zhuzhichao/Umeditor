@@ -22,7 +22,7 @@ return [
 
         // 图片上传编辑器配置
         'imageUrl' => Config::get('app.url').'/umeditor/imageUp',
-        'imagePath' => '',
+        'imagePath' => Config::get('app.url').'/',
         'imageFieldName' => 'upfile',
 
         //工具栏上的所有的功能按钮和下拉框，可以在new编辑器的实例时选择自己需要的从新定义
