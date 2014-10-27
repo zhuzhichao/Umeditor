@@ -9,10 +9,8 @@
 
 ##Install && Use
 
-###Install Composer
-这里不详细介绍安装composer了，大家根据[链接](https://getcomposer.org/)自行安装吧！
+这里不详细介绍如何安装composer了，大家根据[链接](https://getcomposer.org/)自行安装吧！
 
-####Install Umeditor
 命令行下直接 `composer require "zhuzhichao/umeditor"` ，版本的话无特殊需求则选择 `dev-master`，当前使用的Umeditor版本为1.2.2
 
 ####Config
@@ -83,7 +81,7 @@ return [
 
 ###Use
 
-1.封装了一下方法可以方便大家添加编辑器的css和js，以及编辑器，直接在 `blade` 的模版中使用
+1.这里封装了以下方法可以方便大家添加编辑器的css和js，以及编辑器，直接在 `blade` 的模版中使用
 ```php
 // 添加css样式
 {{ Umeditor::css() }}
@@ -107,6 +105,9 @@ return [
 2.文件的上传位置为 `public/upload` 文件夹下，请确保有写入权限
 
 3.好嘞，终于大功告成，你可以参考[这里](http://ueditor.baidu.com/website/umeditor.html)来使用编辑器的一些方法了。
+
+##Bug
+如果你遇到了问题，可以先尝试 `composer update` 来更新一下。如果问题依旧，请提交[issue](https://github.com/zhuzhichao/Umeditor/issues)，我会及时回复。当然如果你能提交[Pull Requests](https://github.com/zhuzhichao/Umeditor/pulls)更好，^^
 
 ##Contributing
 有什么新的想法和建议，欢迎提交[issue](https://github.com/zhuzhichao/Umeditor/issues)或者[Pull Requests](https://github.com/zhuzhichao/Umeditor/pulls)。
