@@ -12,10 +12,10 @@
 ###Install Composer
 这里不详细介绍安装composer了，大家根据[链接](https://getcomposer.org/)自行安装吧！
 
-###Install Umeditor
+####Install Umeditor
 命令行下直接 `composer require "zhuzhichao/umeditor"` ，版本的话无特殊需求则选择 `dev-master`，当前使用的Umeditor版本为1.2.2
 
-###Config
+####Config
 1.在 `app/config/app.php` 的 `providers` 数组中添加
 ```php
 'Zhuzhichao\Umeditor\UmeditorServiceProvider',
