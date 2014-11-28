@@ -8,7 +8,7 @@ return [
     // 图片上传配置
     'upload' => [
         // 上传图片路径
-        'savePath' => 'upload/',
+        'savePath' => 'upload/image',
         // 上传文件大小
         'maxSize' => 1000,
         // 上传文件类型
