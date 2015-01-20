@@ -10,7 +10,7 @@ return [
         // 上传图片路径
         'savePath' => 'upload/image',
         // 上传文件大小
-        'maxSize' => 1000,
+        'maxSize' => 3000,
         // 上传文件类型
         'allowFiles' => [".gif" , ".png" , ".jpg" , ".jpeg" , ".bmp"],
     ],

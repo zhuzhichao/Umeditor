@@ -4,7 +4,13 @@ use Illuminate\Routing\Controller;
 use Zhuzhichao\Umeditor\UmeditorUploader;
 
 class UmeditorImageController extends Controller {
-	public function upload() {
+
+	/**
+     * 文件上传处理
+     *
+     * @return string
+     */
+    public function upload() {
         //上传配置
         $config = Config::get('umeditor::upload');
 
@@ -23,6 +29,11 @@ class UmeditorImageController extends Controller {
         }
     }
 
+	/**
+     * 根据config下面的config.php返回对应生成的JS配置文件
+     *
+     * @return \Illuminate\Http\Response
+     */
     public function config() {
         $config = '(function () {
             window.UMEDITOR_CONFIG =';
