@@ -1,6 +1,6 @@
-#Umeditor for laravel
+#Umeditor for laravel 4
 
-`Umeditor for laravel` 对于国内最好用的富文本web编辑器[umeditor](http://ueditor.baidu.com/website/umeditor.html)的封装，方便使用 `laravel` 的朋友能够快速配置和使用，以及在线更新编辑器。
+`Umeditor for laravel 4` 对于国内最好用的富文本web编辑器[umeditor](http://ueditor.baidu.com/website/umeditor.html)的封装，方便使用 `laravel` 的朋友能够快速配置和使用，以及在线更新编辑器。
 
 ##特点
 1. 方便配置
@@ -11,7 +11,7 @@
 
 这里不详细介绍如何安装composer了，大家根据[链接](https://getcomposer.org/)自行安装吧！
 
-命令行下直接 `composer require "zhuzhichao/umeditor"` ，版本的话无特殊需求则选择 `dev-master`，当前使用的Umeditor版本为1.2.2
+命令行下直接 `composer require "zhuzhichao/umeditor"` ，版本的话无特殊需求则选择 `~1.0`，当前使用的Umeditor版本为1.2.2
 
 ####Config
 1.在 `app/config/app.php` 的 `providers` 数组中添加
