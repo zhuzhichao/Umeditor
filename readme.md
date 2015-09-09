@@ -1,5 +1,7 @@
 #Umeditor for laravel 4
 
+####百度前端团队对于百度编辑器处理停止维护状态，最后一个版本更新日期为 2014.3 ，请慎重选择。
+
 `Umeditor for laravel 4` 对于国内最好用的富文本web编辑器[umeditor](http://ueditor.baidu.com/website/umeditor.html)的封装，方便使用 `laravel` 的朋友能够快速配置和使用，以及在线更新编辑器。
 
 ##特点
